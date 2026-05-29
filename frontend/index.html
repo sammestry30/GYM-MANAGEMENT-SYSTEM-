@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sam's Fitness </title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="index.html" class="logo">
+            <img src="images/your-logo.png" alt="Sam's Fitness Logo">
+            <span>Sam's Fitness</span> </a>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#workouts">Workouts</a>
+            <a href="#about">About Us</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#diet-plans">Diet Plans</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        
+        <div class="header-buttons">
+            <a href="login.html" class="btn">Login</a>
+            <a href="register.html" class="btn">Join Us</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="home" id="home">
+            <div class="home-content">
+                <h1>Build Your <span class="typewriter">Dream Physique</span></h1>
+                <p>Discipline is the bridge between your goals and your accomplishment. </p>
+                <a href="#pricing" class="btn">Join Us</a>
+            </div>
+            <div class="home-image">
+                <img src="https://images.unsplash.com/photo-1581009137042-c552e485697a?auto=format&fit=crop&w=800" alt="Man with a fit physique">
+            </div>
+        </section>
+
+        <section class="services section-hidden" id="workouts">
+            <h2 class="section-title">Our Workouts</h2>
+            <div class="services-container">
+                <a href="strength-training.html" class="service-link">
+                    <div class="service-card">
+                        <img src="https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?auto=format&fit=crop&w=800" alt="Strength Training">
+                        <h3>Strength Training</h3>
+                    </div>
+                </a>
+                <a href="weight-gain.html" class="service-link">
+                    <div class="service-card">
+                        <img src="https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800" alt="Weight Gain">
+                        <h3>Weight Gain</h3>
+                    </div>
+                </a>
+                 <a href="fat-loss.html" class="service-link">
+                    <div class="service-card">
+                        <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=800" alt="Fat Lose">
+                        <h3>Fat Loss</h3>
+                    </div>
+                </a>
+                <a href="weightlifting.html" class="service-link">
+                    <div class="service-card">
+                        <img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e?auto=format&fit=crop&w=800" alt="Weightlifting">
+                        <h3>Weightlifting</h3>
+                    </div>
+                </a>
+                <a href="running.html" class="service-link">
+                    <div class="service-card">
+                        <img src="https://images.unsplash.com/photo-1423439793616-f2aa4356b37e?auto=format&fit=crop&w=800" alt="Running">
+                        <h3>Running</h3>
+                    </div>
+                </a>
+                <a href="crossfit.html" class="service-link">
+    <div class="service-card">
+        <img src="images/your-crossfit-card-image.jpg" alt="CrossFit">
+        <h3>CrossFit</h3>
+    </div>
+</a>
+                <a href="yoga.html" class="service-link">
+                    <div class="service-card">
+                        <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800" alt="Yoga">
+                        <h3>Yoga</h3>
+                    </div>
+                </a>
+                <a href="steam-sauna.html" class="service-link">
+     <div class="service-card">
+        <img src="images/your-sauna-card-image.jpg" alt="Sauna/Steam">
+        <h3>Sauna/Steam</h3>
+    </div>
+</a>
+                 <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?auto=format&fit=crop&w=800" alt="Physical Fitness">
+                    <h3>Physical Fitness</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="about section-hidden" id="about">
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=800" alt="Man on treadmill">
+            </div>
+            <div class="about-content">
+                <h2 class="section-title">Why Choose Us?</h2>
+                <ul>
+                    <li>Our diverse membership base creates a friendly and supportive atmosphere where you can make friends and stay motivated.</li>
+                    <li>Unlock your potential with our expert Personal Trainers.</li>
+                    <li>Elevate your fitness with practice sessions.</li>
+                    <li>We provide supportive management for your fitness success.</li>
+                </ul>
+                <a href="register.html?plan=trial" class="btn">Book A Free Class</a>
+            </div>
+        </section>
+
+        <section class="pricing section-hidden" id="pricing">
+            <h2 class="section-title">Our Plans</h2>
+            <!-- REPLACE the existing pricing-container div with this one -->
+<div class="pricing-container">
+    <div class="plan-card">
+        <h3>BASIC</h3>
+        <p class="price">₹100<span>/Month</span></p>
+        <ul id="plan-basic-services">
+            <!-- Services will be loaded here by JavaScript -->
+        </ul>
+        <a href="register.html?plan=basic">Join Now &rarr;</a>
+    </div>
+    <div class="plan-card">
+        <h3>PRO</h3>
+        <p class="price">₹150<span>/Month</span></p>
+        <ul id="plan-pro-services">
+            <!-- Services will be loaded here by JavaScript -->
+        </ul>
+        <a href="register.html?plan=pro">Join Now &rarr;</a>
+    </div>
+    <div class="plan-card">
+        <h3>PREMIUM</h3>
+        <p class="price">₹300<span>/Month</span></p>
+        <ul id="plan-premium-services">
+            <!-- Services will be loaded here by JavaScript -->
+        </ul>
+        <a href="register.html?plan=premium">Join Now &rarr;</a>
+    </div>
+</div>
+        </section>
+
+        <section class="diet-plans section-hidden" id="diet-plans">
+            <h2 class="section-title">Fuel Your Fitness</h2>
+            <div class="diet-card-container">
+                <div class="diet-card">
+                    <h3>Cutting Plan</h3>
+                    <p>Lean meals designed for fat loss and muscle definition.</p>
+                    <div class="diet-buttons">
+                        <a href="diet-plans/cutting_vegan.pdf" download class="btn-diet">Vegan (PDF)</a>
+                        <a href="diet-plans/cutting_vegetarian.pdf" download class="btn-diet">Vegetarian (PDF)</a>
+                        <a href="diet-plans/cutting_nonveg.pdf" download class="btn-diet">Non-Veg (PDF)</a>
+                    </div>
+                </div>
+                <div class="diet-card">
+                    <h3>Bulking Plan</h3>
+                    <p>Balanced nutrition to build mass and strength safely.</p>
+                    <div class="diet-buttons">
+                        <a href="diet-plans/bulking_vegan.pdf" download class="btn-diet">Vegan (PDF)</a>
+                        <a href="diet-plans/bulking_vegetarian.pdf" download class="btn-diet">Vegetarian (PDF)</a>
+                        <a href="diet-plans/bulking_nonveg.pdf" download class="btn-diet">Non-Veg (PDF)</a>
+                    </div>
+                </div>
+                <div class="diet-card">
+                    <h3>Maintenance Plan</h3>
+                    <p>Flexible plans to maintain your physique and energy levels.</p>
+                    <div class="diet-buttons">
+                        <a href="diet-plans/maintenance_vegan.pdf" download class="btn-diet">Vegan (PDF)</a>
+                        <a href="diet-plans/maintenance_vegetarian.pdf" download class="btn-diet">Vegetarian (PDF)</a>
+                        <a href="diet-plans/maintenance_nonveg.pdf" download class="btn-diet">Non-Veg (PDF)</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!-- =============== BMI CALCULATOR SECTION =============== -->
+        <section class="bmi-calculator section-hidden" id="bmi">
+            <h2 class="section-title">Calculate Your BMI</h2>
+            <div class="bmi-container">
+                <div class="bmi-inputs">
+                    <div class="input-group-bmi">
+                        <label for="height">Height (cm)</label>
+                        <input type="number" id="height" placeholder="e.g., 175">
+                    </div>
+                    <div class="input-group-bmi">
+                        <label for="weight">Weight (kg)</label>
+                        <input type="number" id="weight" placeholder="e.g., 70">
+                    </div>
+                </div>
+                <button id="calculate-bmi" class="btn">Calculate</button>
+                <div id="bmi-result" class="bmi-result-display">
+                    <!-- Result will be shown here -->
+                </div>
+            </div>
+        </section>
+        <section class="gallery section-hidden" id="gallery">
+            <h2 class="section-title">Our Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/gallery1.jpg" alt="Gym image 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery2.jpg" alt="Gym image 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery3.jpg" alt="Gym image 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery4.jpg" alt="Gym image 4">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery5.jpg" alt="Gym image 5">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery6.jpg" alt="Gym image 6">
+                </div>
+                </div>
+        </section>
+        <section class="reviews section-hidden" id="reviews">
+            <h2 class="section-title">Client Reviews</h2>
+            <div class="reviews-container">
+                <div class="review-card">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&h=200" alt="John">
+                    <h4>John</h4>
+                    <div class="stars">★★★★★</div>
+                    <p>The best gym atmosphere in Kalyan. The trainers are incredibly supportive and the equipment is top-notch. It's more than a gym, it's a community you actually want to be a part of.</p>
+                </div>
+                <div class="review-card">
+                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&h=200" alt="Steve">
+                    <h4>Steve</h4>
+                    <div class="stars">★★★★★</div>
+                    <p>I came to Sam's Fitness to get serious about my goals, and the results speak for themselves. The personal training is phenomenal and tailored to what you actually need. Finally seeing the progress I've been wanting for years.</p>
+                </div>
+                <div class="review-card">
+                    <img src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&w=200&h=200" alt="David">
+                    <h4>David</h4>
+                    <div class="stars">★★★★★</div>
+                    <p>Finally, a gym that has it all. An incredible range of free weights, modern machines, and everything is always spotless. The facility is well-maintained, which makes every workout a great experience.</p>
+                </div>
+            </div>
+        </section>
+        <section class="contact section-hidden" id="contact">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-container">
+                <form id="contact-form" class="contact-form">
+                    <div class="input-group">
+                        <input type="text" id="contact-name" placeholder="Your Name" required>
+                        <input type="email" id="contact-email" placeholder="Your Email" required>
+                    </div>
+                    <textarea id="contact-message" placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                    <div id="contact-response" style="text-align:center; margin-top:15px; color:#28a745;"></div>
+                </form>
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p><i class='bx bxs-map'></i> 123 Fitness Lane, Kalyan, India</p>
+                    <p><i class='bx bxs-phone'></i> +91 12345 67890</p>
+                    <p><i class='bx bxs-envelope'></i> contact@samsfitness.com</p>
+                </div>
+            </div>
+        </section>
+   <!-- =============== GOAL SELECTION MODAL =============== -->
+        <div id="goal-modal-overlay" class="modal-overlay hidden">
+            <div class="modal-content">
+                <button id="close-modal-btn" class="close-btn">&times;</button>
+
+                <!-- Step 1: Goal Selection View -->
+                <div id="goal-selection-view">
+                    <h2 class="modal-title">What's Your Primary Goal?</h2>
+                    <p class="modal-subtitle">Select a goal to get a personalized plan recommendation.</p>
+                    <div class="goal-grid">
+                        <button class="goal-btn" data-goal="basic">Get Fit & Healthy</button>
+                        <button class="goal-btn" data-goal="basic">Start My Fitness Journey</button>
+                        <button class="goal-btn" data-goal="pro">Build Muscle & Strength</button>
+                        <button class="goal-btn" data-goal="pro">Lose Weight & Tone Up</button>
+                        <button class="goal-btn" data-goal="premium">Total Body Transformation</button>
+                        <button class="goal-btn" data-goal="premium">Enhance Athletic Performance</button>
+                    </div>
+                </div>
+
+                <!-- Step 2: Plan Suggestion View (Initially Hidden) -->
+                <div id="plan-suggestion-view" class="hidden">
+                    <h2 class="modal-title">Our Recommendation For You!</h2>
+                    <div id="suggested-plan-card" class="plan-card" style="margin-top: 20px;">
+                        <h3 id="suggested-plan-name">PLAN NAME</h3>
+                        <p id="suggested-plan-price" class="price">₹150<span>/Month</span></p>
+                        <ul id="suggested-plan-services">
+                            <!-- Services will be loaded here -->
+                        </ul>
+                        <a id="suggested-plan-link" href="#" class="btn">Join Now &rarr;</a>
+                    </div>
+                    <button id="back-to-goals-btn" class="back-btn">Choose a Different Goal</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer section-hidden">
+        <div class="social-links">
+            <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+            <a href="#"><i class='bx bxl-linkedin-square'></i></a>
+        </div>xa
+        <p>&copy; Sam's Fitness 2025 - All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>

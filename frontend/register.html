@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Sam's Fitness</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Existing styles for the form */
+        body { display: flex; justify-content: center; align-items: center; min-height: 100vh; background: #0d0d0d; padding: 20px 0; }
+        .form-container { background: rgba(255, 255, 255, 0.05); padding: 40px; border-radius: 10px; width: 100%; max-width: 500px; backdrop-filter: blur(10px); }
+        .form-container h1 { text-align: center; margin-bottom: 20px; color: #fff; }
+        .form-group { margin-bottom: 20px; }
+        .form-group input { width: 100%; padding: 12px; background: transparent; border: 1px solid #fff; border-radius: 5px; color: #fff; font-size: 16px; }
+        .form-group input::placeholder { color: #ccc; }
+        #message { text-align: center; margin-top: 20px; color: #28a745; }
+
+        /* --- NEW STYLES FOR THE PLAN SELECTION BAR --- */
+        #plan-selection-container {
+            display: none; /* Hidden by default */
+            margin-bottom: 25px;
+            border-top: 1px solid #444;
+            border-bottom: 1px solid #444;
+            padding: 20px 0;
+        }
+        #plan-selection-container h3 {
+            text-align: center;
+            margin-bottom: 15px;
+            color: #eee;
+            font-weight: 500;
+        }
+        .plan-options {
+            display: flex;
+            justify-content: space-around;
+            gap: 10px;
+        }
+        .plan-option {
+            flex: 1;
+            padding: 10px;
+            border: 2px solid #555;
+            border-radius: 8px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        .plan-option:hover {
+            border-color: #777;
+        }
+        /* Style for the radio button itself (hidden) */
+        .plan-option input[type="radio"] {
+            display: none;
+        }
+        .plan-option label {
+            display: block;
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: #E5B84B;
+            cursor: pointer;
+        }
+        .plan-option .plan-price {
+            font-size: 0.9rem;
+            color: #ccc;
+        }
+        /* Style for the selected plan */
+        .plan-option input[type="radio"]:checked + label {
+             color: #fff;
+        }
+         .plan-option input[type="radio"]:checked ~ .plan-price {
+             color: #fff;
+        }
+        .plan-option.selected {
+            background-color: #E5B84B;
+            border-color: #E5B84B;
+        }
+        .plan-option.selected label, .plan-option.selected .plan-price {
+            color: #1a1a1a;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <form id="register-form">
+            <h1>Create Account</h1>
+            
+            <!-- User detail inputs -->
+            <div class="form-group"><input type="text" id="first_name" placeholder="First Name" required></div>
+            <div class="form-group"><input type="text" id="last_name" placeholder="Last Name" required></div>
+            <div class="form-group"><input type="email" id="email" placeholder="Email Address" required></div>
+            <div class="form-group"><input type="text" id="phone_number" placeholder="Phone Number" required></div>
+            <div class="form-group"><input type="password" id="password" placeholder="Password" required></div>
+            
+            <!-- NEW PLAN SELECTION BAR (HIDDEN BY DEFAULT) -->
+            <div id="plan-selection-container">
+                <h3>Please Select a Plan</h3>
+                <div class="plan-options">
+                    <div class="plan-option" id="plan-option-basic">
+                        <input type="radio" id="plan-basic" name="plan" value="basic">
+                        <label for="plan-basic">BASIC</label>
+                        <span class="plan-price">₹100/Month</span>
+                    </div>
+                    <div class="plan-option" id="plan-option-pro">
+                        <input type="radio" id="plan-pro" name="plan" value="pro">
+                        <label for="plan-pro">PRO</label>
+                        <span class="plan-price">₹150/Month</span>
+                    </div>
+                    <div class="plan-option" id="plan-option-premium">
+                        <input type="radio" id="plan-premium" name="plan" value="premium">
+                        <label for="plan-premium">PREMIUM</label>
+                        <span class="plan-price">₹300/Month</span>
+                    </div>
+                </div>
+            </div>
+            
+            <button type="submit" class="btn" style="width:100%;">Register</button>
+            <div id="message"></div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
